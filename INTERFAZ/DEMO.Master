@@ -1,0 +1,42 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="DEMO.master.cs" Inherits="INTERFAZ.DEMO" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="Content/bootstrap-theme.css" rel="stylesheet" type="text/css"/>
+    <link href="Content/bootstrap.css" rel="stylesheet" type="text/css"/>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <div>
+            <telerik:RadScriptManager runat="server" ID="radmanager1"></telerik:RadScriptManager>
+            <telerik:RadMenu ID="RadMenu1" Runat="server">
+                <Items>
+                    <telerik:RadMenuItem runat="server" Text="Cargo" NavigateUrl="~/Cargo.aspx">
+                    </telerik:RadMenuItem>
+                    <telerik:RadMenuItem runat="server" Text="Categoria" NavigateUrl="~/Categoria.aspx">
+                    </telerik:RadMenuItem>
+                    <telerik:RadMenuItem runat="server" Text="Persona" NavigateUrl="~/Persona.aspx">
+                    </telerik:RadMenuItem>
+                    <telerik:RadMenuItem runat="server" Text="Inventario" NavigateUrl="~/Inventario.aspx">
+                    </telerik:RadMenuItem>
+                </Items>
+            </telerik:RadMenu>
+
+        </div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        <div class="center-block">
+                        MINEC 2017
+        </div>
+    </div>
+    </form>
+</body>
+</html>
